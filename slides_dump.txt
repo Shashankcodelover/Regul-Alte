@@ -1,0 +1,236 @@
+=== Slide 1 ===
+Agentic AI Legal Document Simplifier &amp; Extraction Engine
+Tattvasphere
+ScanSkip HackOS-ONE
+By Team Name : RegulAIte
+Date: 19/05/2026
+https://hackos.scanskip.com/
+
+=== Slide 2 ===
+Team Details
+Tattvasphere
+ScanSkip HackOS-ONE
+https://hackos.scanskip.com/
+
+=== Slide 3 ===
+Problem Statement
+Tattvasphere
+ScanSkip HackOS-ONE
+https://hackos.scanskip.com/
+Three key points with supporting numbers:
+1. The Jargon Trap 📄
+->
+Average vendor contract
+14 pages of dense legalese. Less than 17% of non-lawyers understand what they sign.
+2. The Cost Trap 💰
+->
+A lawyer review costs ₹40,000
+–>₹1,00,000 per contract and takes 3–5 business days. Startups skip it and get burned.
+3. The AI Gap 🤖
+->
+Standard ChatGPT-style AI just summarizes
+it misses loopholes, logical contradictions, and regulatory violations. It hallucinates citations that don't exist in the original document.
+Visual stat to highlight:
+->"83% of startup contracts contain at least one clause that legally favors only the vendor."
+
+=== Slide 4 ===
+Introduction
+Tattvasphere
+ScanSkip HackOS-ONE
+https://hackos.scanskip.com/
+What is RegulAIte?
+->
+One-line hook:
+"A robot lawyer that reads your contracts, finds the traps, and fixes them — before you sign."
+->
+Three supporting points:
+Not a summarizer — an agent: RegulAIte doesn't just describe the contract. It actively stress-tests it like a hostile lawyer would.
+->
+Adversarial by design:
+Two AI agents argue with each other — one attacks the contract looking for exploits, one defends it. The result reveals your true exposure.
+->
+Autonomous end-to-end:
+Upload → Analyze → Flag → Fix → Export. Zero human review required for the first pass.
+
+=== Slide 5 ===
+Objectives
+Tattvasphere
+ScanSkip HackOS-ONE
+https://hackos.scanskip.com/
+What We Set Out to Do
+Four objectives with simple icons:
+🔤
+TRANSLATE
+—
+Turn dense legal jargon into plain English anyone can act on.
+🛡️
+PROTECT
+—
+Deploy AI agents to hunt for hidden loopholes and dangerous clauses automatically.
+✅
+VERIFY
+—
+Mathematically prove the contract has no internal contradictions using formal logic.
+🔧
+RESOLVE
+—
+Auto-generate safe, fair rewritten clauses ready to send back to the vendor.
+
+=== Slide 6 ===
+Scope of the Project
+Tattvasphere
+ScanSkip HackOS-ONE
+https://hackos.scanskip.com/
+Who Is This For &amp; What Does It Handle?
+Target Users:
+->Startups and SMEs signing vendor agreements
+->Corporate compliance teams reviewing EULAs
+->Founders who can't afford legal counsel for every contract
+->Document Types Supported (show as small cards):
+->Vendor Service Agreements
+->Software License Agreements (EULAs)
+->NDA / Confidentiality Agreements
+->Employment &amp; Contractor Contracts
+->Commercial Lease Agreements
+->Data Processing Agreements (GDPR/CCPA relevant)
+What the system delivers:
+✅ Interactive risk dashboard (Streamlit UI)
+✅ Full backend API (FastAPI, 8 endpoints)
+✅ Redlined .docx export ready to email back to vendor
+
+=== Slide 7 ===
+Proposed System / Methodology
+Tattvasphere
+ScanSkip HackOS-ONE
+https://hackos.scanskip.com/
+How It Works — 4 Steps
+Step-by-step flow (show as numbered pipeline):
+->
+Step 1
+—
+INGEST
+📥
+User uploads a PDF. PyMuPDF + Tesseract OCR extracts every clause and assigns it a unique ID with page number. Output: structured JSON clause list.
+->
+Step 2
+—
+RED-TEAM
+⚔️
+The Attacker Agent reads every clause and attempts to find exploitable loopholes — like a hostile lawyer. The Defender Agent argues back. Any clause the Attacker wins = flagged dangerous.
+->
+Step 3
+—
+VALIDATE
+🔬
+The Z3 SMT Solver maps all contract rules as logical equations and checks for contradictions — clauses that cancel each other out or create rights that can never actually be used.
+->
+Step 4
+—
+OUTPUT
+📤
+Risk Score (0–100) generated. AutoFixer rewrites dangerous clauses. Obligation timeline shows every deadline. Redlined .docx exported.
+
+=== Slide 8 ===
+<a:tblPr/><a:tblGrid><a:gridCol w="2768135"/><a:gridCol w="2631603"/><a:gridCol w="6876205"/></a:tblGrid><a:tr h="758081"><a:tc><a:txBody><a:bodyPr anchor="t" rtlCol="false"/><a:lstStyle/><a:p><a:pPr algn="ctr"><a:lnSpc><a:spcPts val="2939"/></a:lnSpc><a:defRPr/></a:pPr><a:r><a:rPr lang="en-US" sz="2099" b="true"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:latin typeface="Poppins Bold"/><a:ea typeface="Poppins Bold"/><a:cs typeface="Poppins Bold"/><a:sym typeface="Poppins Bold"/></a:rPr><a:t>Layer
+<a:lnL cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnL><a:lnR cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnR><a:lnT cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnT><a:lnB cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnB></a:tcPr></a:tc><a:tc><a:txBody><a:bodyPr anchor="t" rtlCol="false"/><a:lstStyle/><a:p><a:pPr algn="ctr"><a:lnSpc><a:spcPts val="2520"/></a:lnSpc><a:defRPr/></a:pPr><a:r><a:rPr lang="en-US" sz="1800" b="true"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:latin typeface="Poppins Bold"/><a:ea typeface="Poppins Bold"/><a:cs typeface="Poppins Bold"/><a:sym typeface="Poppins Bold"/></a:rPr><a:t>Tool
+<a:lnL cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnL><a:lnR cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnR><a:lnT cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnT><a:lnB cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnB></a:tcPr></a:tc><a:tc><a:txBody><a:bodyPr anchor="t" rtlCol="false"/><a:lstStyle/><a:p><a:pPr algn="ctr"><a:lnSpc><a:spcPts val="2520"/></a:lnSpc><a:defRPr/></a:pPr><a:r><a:rPr lang="en-US" sz="1800" b="true"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:latin typeface="Poppins Bold"/><a:ea typeface="Poppins Bold"/><a:cs typeface="Poppins Bold"/><a:sym typeface="Poppins Bold"/></a:rPr><a:t>Why
+<a:lnL cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnL><a:lnR cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnR><a:lnT cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnT><a:lnB cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnB></a:tcPr></a:tc></a:tr><a:tr h="995870"><a:tc><a:txBody><a:bodyPr anchor="t" rtlCol="false"/><a:lstStyle/><a:p><a:pPr algn="ctr"><a:lnSpc><a:spcPts val="2520"/></a:lnSpc><a:defRPr/></a:pPr><a:r><a:rPr lang="en-US" sz="1800"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:latin typeface="Poppins"/><a:ea typeface="Poppins"/><a:cs typeface="Poppins"/><a:sym typeface="Poppins"/></a:rPr><a:t>AI Agents
+<a:lnL cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnL><a:lnR cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnR><a:lnT cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnT><a:lnB cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnB></a:tcPr></a:tc><a:tc><a:txBody><a:bodyPr anchor="t" rtlCol="false"/><a:lstStyle/><a:p><a:pPr algn="ctr"><a:lnSpc><a:spcPts val="2520"/></a:lnSpc><a:defRPr/></a:pPr><a:r><a:rPr lang="en-US" sz="1800"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:latin typeface="Poppins"/><a:ea typeface="Poppins"/><a:cs typeface="Poppins"/><a:sym typeface="Poppins"/></a:rPr><a:t>CrewAI + LangGraph
+<a:lnL cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnL><a:lnR cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnR><a:lnT cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnT><a:lnB cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnB></a:tcPr></a:tc><a:tc><a:txBody><a:bodyPr anchor="t" rtlCol="false"/><a:lstStyle/><a:p><a:pPr algn="ctr"><a:lnSpc><a:spcPts val="2520"/></a:lnSpc><a:defRPr/></a:pPr><a:r><a:rPr lang="en-US" sz="1800"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:latin typeface="Poppins"/><a:ea typeface="Poppins"/><a:cs typeface="Poppins"/><a:sym typeface="Poppins"/></a:rPr><a:t>Orchestrates Attacker, Defender, AutoFixer, Compliance agents
+<a:lnL cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnL><a:lnR cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnR><a:lnT cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnT><a:lnB cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnB></a:tcPr></a:tc></a:tr><a:tr h="697137"><a:tc><a:txBody><a:bodyPr anchor="t" rtlCol="false"/><a:lstStyle/><a:p><a:pPr algn="ctr"><a:lnSpc><a:spcPts val="2520"/></a:lnSpc><a:defRPr/></a:pPr><a:r><a:rPr lang="en-US" sz="1800"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:latin typeface="Poppins"/><a:ea typeface="Poppins"/><a:cs typeface="Poppins"/><a:sym typeface="Poppins"/></a:rPr><a:t>LLM
+<a:lnL cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnL><a:lnR cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnR><a:lnT cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnT><a:lnB cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnB></a:tcPr></a:tc><a:tc><a:txBody><a:bodyPr anchor="t" rtlCol="false"/><a:lstStyle/><a:p><a:pPr algn="ctr"><a:lnSpc><a:spcPts val="2520"/></a:lnSpc><a:defRPr/></a:pPr><a:r><a:rPr lang="en-US" sz="1800"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:latin typeface="Poppins"/><a:ea typeface="Poppins"/><a:cs typeface="Poppins"/><a:sym typeface="Poppins"/></a:rPr><a:t>Claude / GPT-4o
+<a:lnL cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnL><a:lnR cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnR><a:lnT cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnT><a:lnB cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnB></a:tcPr></a:tc><a:tc><a:txBody><a:bodyPr anchor="t" rtlCol="false"/><a:lstStyle/><a:p><a:pPr algn="ctr"><a:lnSpc><a:spcPts val="2520"/></a:lnSpc><a:defRPr/></a:pPr><a:r><a:rPr lang="en-US" sz="1800"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:latin typeface="Poppins"/><a:ea typeface="Poppins"/><a:cs typeface="Poppins"/><a:sym typeface="Poppins"/></a:rPr><a:t>Powers all agent reasoning and clause rewriting
+<a:lnL cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnL><a:lnR cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnR><a:lnT cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnT><a:lnB cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnB></a:tcPr></a:tc></a:tr><a:tr h="689336"><a:tc><a:txBody><a:bodyPr anchor="t" rtlCol="false"/><a:lstStyle/><a:p><a:pPr algn="ctr"><a:lnSpc><a:spcPts val="2520"/></a:lnSpc><a:defRPr/></a:pPr><a:r><a:rPr lang="en-US" sz="1800"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:latin typeface="Poppins"/><a:ea typeface="Poppins"/><a:cs typeface="Poppins"/><a:sym typeface="Poppins"/></a:rPr><a:t>Backend
+<a:lnL cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnL><a:lnR cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnR><a:lnT cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnT><a:lnB cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnB></a:tcPr></a:tc><a:tc><a:txBody><a:bodyPr anchor="t" rtlCol="false"/><a:lstStyle/><a:p><a:pPr algn="ctr"><a:lnSpc><a:spcPts val="2519"/></a:lnSpc><a:defRPr/></a:pPr><a:r><a:rPr lang="en-US" sz="1799"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:latin typeface="Canva Sans"/><a:ea typeface="Canva Sans"/><a:cs typeface="Canva Sans"/><a:sym typeface="Canva Sans"/></a:rPr><a:t>FastAPI (Python)
+<a:lnL cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnL><a:lnR cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnR><a:lnT cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnT><a:lnB cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnB></a:tcPr></a:tc><a:tc><a:txBody><a:bodyPr anchor="t" rtlCol="false"/><a:lstStyle/><a:p><a:pPr algn="ctr"><a:lnSpc><a:spcPts val="2520"/></a:lnSpc><a:defRPr/></a:pPr><a:r><a:rPr lang="en-US" sz="1800"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:latin typeface="Poppins"/><a:ea typeface="Poppins"/><a:cs typeface="Poppins"/><a:sym typeface="Poppins"/></a:rPr><a:t>8 async API endpoints, Pydantic schema validation
+<a:lnL cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnL><a:lnR cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnR><a:lnT cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnT><a:lnB cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnB></a:tcPr></a:tc></a:tr><a:tr h="995870"><a:tc><a:txBody><a:bodyPr anchor="t" rtlCol="false"/><a:lstStyle/><a:p><a:pPr algn="ctr"><a:lnSpc><a:spcPts val="2520"/></a:lnSpc><a:defRPr/></a:pPr><a:r><a:rPr lang="en-US" sz="1800"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:latin typeface="Poppins"/><a:ea typeface="Poppins"/><a:cs typeface="Poppins"/><a:sym typeface="Poppins"/></a:rPr><a:t>PDF Parsing
+<a:lnL cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnL><a:lnR cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnR><a:lnT cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnT><a:lnB cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnB></a:tcPr></a:tc><a:tc><a:txBody><a:bodyPr anchor="t" rtlCol="false"/><a:lstStyle/><a:p><a:pPr algn="ctr"><a:lnSpc><a:spcPts val="2520"/></a:lnSpc><a:defRPr/></a:pPr><a:r><a:rPr lang="en-US" sz="1800"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:latin typeface="Poppins"/><a:ea typeface="Poppins"/><a:cs typeface="Poppins"/><a:sym typeface="Poppins"/></a:rPr><a:t>PyMuPDF + Tesseract
+<a:lnL cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnL><a:lnR cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnR><a:lnT cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnT><a:lnB cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnB></a:tcPr></a:tc><a:tc><a:txBody><a:bodyPr anchor="t" rtlCol="false"/><a:lstStyle/><a:p><a:pPr algn="ctr"><a:lnSpc><a:spcPts val="2520"/></a:lnSpc><a:defRPr/></a:pPr><a:r><a:rPr lang="en-US" sz="1800"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:latin typeface="Poppins"/><a:ea typeface="Poppins"/><a:cs typeface="Poppins"/><a:sym typeface="Poppins"/></a:rPr><a:t>Extracts text from any PDF including scanned images
+<a:lnL cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnL><a:lnR cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnR><a:lnT cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnT><a:lnB cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnB></a:tcPr></a:tc></a:tr><a:tr h="689336"><a:tc><a:txBody><a:bodyPr anchor="t" rtlCol="false"/><a:lstStyle/><a:p><a:pPr algn="ctr"><a:lnSpc><a:spcPts val="2520"/></a:lnSpc><a:defRPr/></a:pPr><a:r><a:rPr lang="en-US" sz="1800"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:latin typeface="Poppins"/><a:ea typeface="Poppins"/><a:cs typeface="Poppins"/><a:sym typeface="Poppins"/></a:rPr><a:t>Logic Checker
+<a:lnL cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnL><a:lnR cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnR><a:lnT cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnT><a:lnB cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnB></a:tcPr></a:tc><a:tc><a:txBody><a:bodyPr anchor="t" rtlCol="false"/><a:lstStyle/><a:p><a:pPr algn="ctr"><a:lnSpc><a:spcPts val="2520"/></a:lnSpc><a:defRPr/></a:pPr><a:r><a:rPr lang="en-US" sz="1800"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:latin typeface="Poppins"/><a:ea typeface="Poppins"/><a:cs typeface="Poppins"/><a:sym typeface="Poppins"/></a:rPr><a:t>Z3 SMT Solver
+<a:lnL cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnL><a:lnR cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnR><a:lnT cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnT><a:lnB cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnB></a:tcPr></a:tc><a:tc><a:txBody><a:bodyPr anchor="t" rtlCol="false"/><a:lstStyle/><a:p><a:pPr algn="ctr"><a:lnSpc><a:spcPts val="2520"/></a:lnSpc><a:defRPr/></a:pPr><a:r><a:rPr lang="en-US" sz="1800"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:latin typeface="Poppins"/><a:ea typeface="Poppins"/><a:cs typeface="Poppins"/><a:sym typeface="Poppins"/></a:rPr><a:t>Mathematical formal verification of contract logic
+<a:lnL cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnL><a:lnR cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnR><a:lnT cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnT><a:lnB cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnB></a:tcPr></a:tc></a:tr><a:tr h="995870"><a:tc><a:txBody><a:bodyPr anchor="t" rtlCol="false"/><a:lstStyle/><a:p><a:pPr algn="ctr"><a:lnSpc><a:spcPts val="2520"/></a:lnSpc><a:defRPr/></a:pPr><a:r><a:rPr lang="en-US" sz="1800"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:latin typeface="Poppins"/><a:ea typeface="Poppins"/><a:cs typeface="Poppins"/><a:sym typeface="Poppins"/></a:rPr><a:t>Memory &amp; RAG
+<a:lnL cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnL><a:lnR cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnR><a:lnT cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnT><a:lnB cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnB></a:tcPr></a:tc><a:tc><a:txBody><a:bodyPr anchor="t" rtlCol="false"/><a:lstStyle/><a:p><a:pPr algn="ctr"><a:lnSpc><a:spcPts val="2520"/></a:lnSpc><a:defRPr/></a:pPr><a:r><a:rPr lang="en-US" sz="1800"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:latin typeface="Poppins"/><a:ea typeface="Poppins"/><a:cs typeface="Poppins"/><a:sym typeface="Poppins"/></a:rPr><a:t>Qdrant + NetworkX
+<a:lnL cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnL><a:lnR cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnR><a:lnT cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnT><a:lnB cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnB></a:tcPr></a:tc><a:tc><a:txBody><a:bodyPr anchor="t" rtlCol="false"/><a:lstStyle/><a:p><a:pPr algn="ctr"><a:lnSpc><a:spcPts val="2520"/></a:lnSpc><a:defRPr/></a:pPr><a:r><a:rPr lang="en-US" sz="1800"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:latin typeface="Poppins"/><a:ea typeface="Poppins"/><a:cs typeface="Poppins"/><a:sym typeface="Poppins"/></a:rPr><a:t>Vector search for citations, knowledge graph for anti-hallucination
+<a:lnL cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnL><a:lnR cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnR><a:lnT cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnT><a:lnB cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnB></a:tcPr></a:tc></a:tr><a:tr h="689336"><a:tc><a:txBody><a:bodyPr anchor="t" rtlCol="false"/><a:lstStyle/><a:p><a:pPr algn="ctr"><a:lnSpc><a:spcPts val="2520"/></a:lnSpc><a:defRPr/></a:pPr><a:r><a:rPr lang="en-US" sz="1800"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:latin typeface="Poppins"/><a:ea typeface="Poppins"/><a:cs typeface="Poppins"/><a:sym typeface="Poppins"/></a:rPr><a:t>Frontend
+<a:lnL cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnL><a:lnR cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnR><a:lnT cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnT><a:lnB cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnB></a:tcPr></a:tc><a:tc><a:txBody><a:bodyPr anchor="t" rtlCol="false"/><a:lstStyle/><a:p><a:pPr algn="ctr"><a:lnSpc><a:spcPts val="2520"/></a:lnSpc><a:defRPr/></a:pPr><a:r><a:rPr lang="en-US" sz="1800"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:latin typeface="Poppins"/><a:ea typeface="Poppins"/><a:cs typeface="Poppins"/><a:sym typeface="Poppins"/></a:rPr><a:t>Streamlit
+<a:lnL cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnL><a:lnR cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnR><a:lnT cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnT><a:lnB cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnB></a:tcPr></a:tc><a:tc><a:txBody><a:bodyPr anchor="t" rtlCol="false"/><a:lstStyle/><a:p><a:pPr algn="ctr"><a:lnSpc><a:spcPts val="2520"/></a:lnSpc><a:defRPr/></a:pPr><a:r><a:rPr lang="en-US" sz="1800"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:latin typeface="Poppins"/><a:ea typeface="Poppins"/><a:cs typeface="Poppins"/><a:sym typeface="Poppins"/></a:rPr><a:t>Interactive 6-tab dashboard with Plotly charts
+<a:lnL cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnL><a:lnR cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnR><a:lnT cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnT><a:lnB cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnB></a:tcPr></a:tc></a:tr><a:tr h="689336"><a:tc><a:txBody><a:bodyPr anchor="t" rtlCol="false"/><a:lstStyle/><a:p><a:pPr algn="ctr"><a:lnSpc><a:spcPts val="2520"/></a:lnSpc><a:defRPr/></a:pPr><a:r><a:rPr lang="en-US" sz="1800"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:latin typeface="Poppins"/><a:ea typeface="Poppins"/><a:cs typeface="Poppins"/><a:sym typeface="Poppins"/></a:rPr><a:t>Export
+<a:lnL cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnL><a:lnR cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnR><a:lnT cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnT><a:lnB cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnB></a:tcPr></a:tc><a:tc><a:txBody><a:bodyPr anchor="t" rtlCol="false"/><a:lstStyle/><a:p><a:pPr algn="ctr"><a:lnSpc><a:spcPts val="2520"/></a:lnSpc><a:defRPr/></a:pPr><a:r><a:rPr lang="en-US" sz="1800"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:latin typeface="Poppins"/><a:ea typeface="Poppins"/><a:cs typeface="Poppins"/><a:sym typeface="Poppins"/></a:rPr><a:t>python-docx
+<a:lnL cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnL><a:lnR cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnR><a:lnT cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnT><a:lnB cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnB></a:tcPr></a:tc><a:tc><a:txBody><a:bodyPr anchor="t" rtlCol="false"/><a:lstStyle/><a:p><a:pPr algn="ctr"><a:lnSpc><a:spcPts val="2520"/></a:lnSpc><a:defRPr/></a:pPr><a:r><a:rPr lang="en-US" sz="1800"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:latin typeface="Poppins"/><a:ea typeface="Poppins"/><a:cs typeface="Poppins"/><a:sym typeface="Poppins"/></a:rPr><a:t>Generates redlined Word documents
+<a:lnL cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnL><a:lnR cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnR><a:lnT cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnT><a:lnB cmpd="sng" algn="ctr" cap="flat" w="38100"><a:solidFill><a:srgbClr val="000000"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd type="none" w="med" len="med"/><a:tailEnd type="none" w="med" len="med"/></a:lnB></a:tcPr></a:tc></a:tr></a:tbl></a:graphicData></a:graphic></p:graphicFrame><p:sp><p:nvSpPr><p:cNvPr name="TextBox 5" id="5"/><p:cNvSpPr txBox="true"/><p:nvPr/></p:nvSpPr><p:spPr><a:xfrm rot="0"><a:off x="3578964" y="352425"/><a:ext cx="12725702" cy="2334971"/></a:xfrm><a:prstGeom prst="rect"><a:avLst/></a:prstGeom></p:spPr><p:txBody><a:bodyPr anchor="t" rtlCol="false" tIns="0" lIns="0" bIns="0" rIns="0"><a:spAutoFit/></a:bodyPr><a:lstStyle/><a:p><a:pPr algn="l"><a:lnSpc><a:spcPts val="8199"/></a:lnSpc></a:pPr><a:r><a:rPr lang="en-US" b="true" sz="10249" spc="-512"><a:solidFill><a:srgbClr val="2563EB"/></a:solidFill><a:latin typeface="Arimo Bold"/><a:ea typeface="Arimo Bold"/><a:cs typeface="Arimo Bold"/><a:sym typeface="Arimo Bold"/></a:rPr><a:t>Technology Stack
+Tattvasphere
+ScanSkip HackOS-ONE
+https://hackos.scanskip.com/
+
+=== Slide 9 ===
+Proposed Features
+Tattvasphere
+ScanSkip HackOS-ONE
+https://hackos.scanskip.com/
+The 5 Core Features
+Feature cards (one per row or 2x3 grid):
+🔍 Loophole Finder —
+Two AI agents debate every clause. Attacker hunts exploits, Defender assesses real risk. You see exactly which clauses a vendor lawyer could use against you.
+⚖️ Logic Validator —
+Z3 solver reads the contract like a math problem. Finds clauses that contradict each other or create "paper rights" that can never be exercised.
+🚨 Danger Risk Score —
+Every clause gets a 0–100 danger score. The whole contract gets an overall score. Red = dangerous. Green = safe. No law degree needed to understand it.
+📌 Anti-Hallucination Tracker —
+Every AI claim links back to the exact sentence and page number in the original PDF. One click verifies any finding.
+✏️ Auto-Fixer + Redline Export —
+Dangerous clauses are rewritten into fair versions automatically. One button exports a professional .docx with original text struck through in red and fix in green — exactly like a real lawyer's markup.
+
+=== Slide 10 ===
+Expected Outcome
+Tattvasphere
+ScanSkip HackOS-ONE
+https://hackos.scanskip.com/
+What Changes After Using RegulAIte:
+->
+F
+our impact stats (large number callouts):
+80% — Reduction in time to review a contract (from 3 days → 30 minutes)
+₹0 — Legal review cost for first-pass risk assessment
+100% — Citation-backed — every AI finding traceable to original document
+5 min — From PDF upload to redlined counter-proposal ready to send
+->
+Supporting bullets:
+Non-lawyer founders can negotiate complex agreements confidently
+Compliance teams catch GDPR / IT Act violations before regulators do
+Vendors receive a professional redlined counter-proposal, not a vague objection
+
+=== Slide 11 ===
+Any Other Relevant Information
+Tattvasphere
+ScanSkip HackOS-ONE
+https://hackos.scanskip.com/
+Why This Matters Beyond the Hackathon
+->
+Market Opportunity:
+The global LegalTech market is projected to reach $35 billion by 2027. RegulAIte targets the underserved SME segment — companies too small for in-house counsel, too large to risk bad contracts.
+->
+Startup Viability:
+SaaS pricing: ₹999/month per seat (5 contracts/month)
+->
+Enterprise tier:
+API access for compliance teams
+->
+Partnership path:
+i
+ntegrate with DocuSign, Zoho Sign, LEXI
+->
+Open Innovation Alignment:
+RegulAIte solves the "black box" AI trust problem head-on. Every decision is:
+Mathematically verified (Z3 solver)
+Source-cited (anti-hallucination tracker)
+Auditable (full clause-to-decision trace)
+This positions it for enterprise adoption where explainability is legally required.
+
+=== Slide 12 ===
+Thank
+You
+Tattvasphere
+ScanSkip HackOS-ONE
+https://hackos.scanskip.com/
+"We didn't build a legal chatbot. We built a legal bodyguard."
