@@ -447,23 +447,27 @@ def analyze_pdf_content(uploaded_file):
                 
             if response.status_code == 200:
                 result = response.json()
-                
-                # Make sure compliance audit is added if not present
-                if "compliance_audit" not in result:
-                    result["compliance_audit"] = compute_compliance_audit("", result.get("red_flags", []))
-                
-                # Setup trends if missing
-                if "pages_trend" not in result:
-                    result["pages_trend"] = f"+{result.get('pages_analyzed', 1)} pages"
-                if "risks_trend" not in result:
-                    result["risks_trend"] = f"+{result.get('identified_risks', 0)} this upload"
-                if "precedents_trend" not in result:
-                    result["precedents_trend"] = f"+{result.get('relevant_precedents', 5)} cases"
-                if "confidence_trend" not in result:
-                    result["confidence_trend"] = "+3%"
-                
-                st.session_state['active_level'] = f"Backend Orchestrated: {result.get('verdict', 'Scanned')}"
-                return result
+                if "error" not in result:
+                    # Make sure compliance audit is added if not present
+                    if "compliance_audit" not in result:
+                        result["compliance_audit"] = compute_compliance_audit("", result.get("red_flags", []))
+                    
+                    # Setup trends if missing
+                    if "pages_trend" not in result:
+                        result["pages_trend"] = f"+{result.get('pages_analyzed', 1)} pages"
+                    if "risks_trend" not in result:
+                        result["risks_trend"] = f"+{result.get('identified_risks', 0)} this upload"
+                    if "precedents_trend" not in result:
+                        result["precedents_trend"] = f"+{result.get('relevant_precedents', 5)} cases"
+                    if "confidence_trend" not in result:
+                        result["confidence_trend"] = "+3%"
+                    
+                    st.session_state['active_level'] = f"Backend Orchestrated: {result.get('verdict', 'Scanned')}"
+                    return result
+                else:
+                    st.sidebar.warning(f"Backend API Error: {result.get('error')}. Swapping to Gemini LLM...")
+            else:
+                st.sidebar.warning(f"Backend API returned status {response.status_code}. Swapping to Gemini LLM...")
         except Exception as e:
             # Backend not running or failed - fall back gracefully to frontend scanner
             pass
