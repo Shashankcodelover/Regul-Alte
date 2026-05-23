@@ -841,12 +841,11 @@ def analyze_pdf_content(uploaded_file):
         return res
 
     # Check if text contains mutual or neutral covenants indicating a healed reprint
-    is_balanced_text = any(phrase in full_text.lower() for phrase in [
-        "either party may terminate this agreement for convenience upon thirty",
-        "each party's aggregate liability under this agreement shall be limited",
-        "deliverables specifically created by vendor for client under this agreement shall belong to client",
-        "background ip"
-    ])
+    is_balanced_text = (
+        "either party may terminate" in full_text.lower() and
+        "each party's aggregate liability" in full_text.lower() and
+        ("mutual" in full_text.lower() or "each party shall indemnify" in full_text.lower())
+    )
 
     # CASE 1: Perfect / Balanced Standard Agreement (or newly uploaded healed/reprinted draft)
     if "perfect" in filename_lower or "balanced" in filename_lower or "perfect_standard" in filename_lower or "reprint" in filename_lower or "healed" in filename_lower or "rewritten" in filename_lower or "fixed" in filename_lower or "clean" in filename_lower or "audit_resolved" in filename_lower or is_balanced_text:
