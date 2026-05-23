@@ -608,6 +608,7 @@ def analyze_pdf_content(uploaded_file):
             3. clause_text (the actual verbatim sentence or bullet point from the slides containing the issue)
             4. citation (exact slide reference and context, e.g. "Slide 8 / Proposed Architecture Stack")
             5. impact (explain clearly in simple terms what the risk is and why it needs immediate resolution or technical care)
+            6. advantage (specify "vendor" if this risk favors the Vendor/Provider, "client" if it favors the Client/Customer, or "balanced" if it is mutual/neutral)
             
             Also compute:
             - score: An overall integer risk score from 0 to 100 (where 0 is a perfect complete feasible project, and 100 is extremely risky or incomplete)
@@ -625,7 +626,8 @@ def analyze_pdf_content(uploaded_file):
                         "severity": 7,
                         "clause_text": "...",
                         "citation": "Slide 8",
-                        "impact": "..."
+                        "impact": "...",
+                        "advantage": "vendor"
                     }}
                 ]
             }}
@@ -646,6 +648,7 @@ def analyze_pdf_content(uploaded_file):
             3. clause_text (the actual verbatim sentence or short sentence excerpt containing the issue)
             4. citation (exact section reference and context sentence, e.g. "Section 6.3 / Intellectual Property")
             5. impact (explain clearly in simple commercial terms what the threat is and why it's unfair or dangerous)
+            6. advantage (specify "vendor" if the clause favors the Vendor, "client" if it favors the Client, or "balanced" if it is reciprocal and symmetric)
             
             Also compute:
             - score: An overall integer risk score from 0 to 100 (where 0 is a perfect safe mutual agreement, and 100 is extremely dangerous and asymmetrical)
@@ -663,7 +666,8 @@ def analyze_pdf_content(uploaded_file):
                         "severity": 9,
                         "clause_text": "...",
                         "citation": "Section 4.2",
-                        "impact": "..."
+                        "impact": "...",
+                        "advantage": "client"
                     }}
                 ]
             }}
@@ -681,6 +685,51 @@ def analyze_pdf_content(uploaded_file):
                 if clean_json.endswith("```"):
                     clean_json = clean_json[:-3]
                 result = json.loads(clean_json.strip())
+                
+                # Post-process flags to guarantee 'advantage' attribute is populated
+                if "red_flags" in result:
+                    for flag in result["red_flags"]:
+                        if "advantage" not in flag or not flag["advantage"]:
+                            # Simple semantic inference fallback
+                            c_text = (flag.get('clause_text', '') + ' ' + flag.get('impact', '') + ' ' + flag.get('category', '')).lower()
+                            if "indemn" in c_text:
+                                if "client shall" in c_text or "client agrees" in c_text or "customer shall" in c_text:
+                                    flag["advantage"] = "vendor"
+                                elif "vendor shall" in c_text or "provider shall" in c_text or "supplier shall" in c_text:
+                                    flag["advantage"] = "client"
+                                elif "each party" in c_text or "mutual" in c_text:
+                                    flag["advantage"] = "balanced"
+                                else:
+                                    flag["advantage"] = "client"
+                            elif "terminate" in c_text or "termination" in c_text:
+                                if "client may terminate" in c_text:
+                                    flag["advantage"] = "client"
+                                elif "vendor may terminate" in c_text or "provider may terminate" in c_text:
+                                    flag["advantage"] = "vendor"
+                                else:
+                                    flag["advantage"] = "balanced"
+                            elif "liability" in c_text:
+                                if "client" in c_text and "uncapped" in c_text:
+                                    flag["advantage"] = "vendor"
+                                elif "vendor" in c_text and "uncapped" in c_text:
+                                    flag["advantage"] = "client"
+                                elif "each party" in c_text or "mutual" in c_text:
+                                    flag["advantage"] = "balanced"
+                                elif "vendor" in c_text and "cap" in c_text:
+                                    flag["advantage"] = "vendor"
+                                elif "client" in c_text and "cap" in c_text:
+                                    flag["advantage"] = "client"
+                                else:
+                                    flag["advantage"] = "balanced"
+                            elif "intellectual property" in c_text or "work product" in c_text or "ip" in c_text:
+                                if "owned by client" in c_text or "belong to client" in c_text:
+                                    flag["advantage"] = "client"
+                                elif "owned by vendor" in c_text or "retained by vendor" in c_text:
+                                    flag["advantage"] = "vendor"
+                                else:
+                                    flag["advantage"] = "balanced"
+                            else:
+                                flag["advantage"] = "balanced"
                 
                 # Enrich with UI elements
                 result["pages_analyzed"] = num_pages
