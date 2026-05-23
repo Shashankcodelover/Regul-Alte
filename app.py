@@ -1,5 +1,7 @@
 # pyrefly: ignore [missing-import]
 import streamlit as st
+from dotenv import load_dotenv
+load_dotenv()
 import time
 import textwrap
 import difflib
