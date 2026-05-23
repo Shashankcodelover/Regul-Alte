@@ -491,3 +491,57 @@ auto_fixes = [
         "rationale": "Scopes the IP assignment to project-specific Deliverables and explicitly preserves Vendor's Background IP."
     }
 ]
+
+# ── Historical Real-World Corporate Scams & Precedents Database ────────────────
+HISTORICAL_SCAMS = {
+    "Termination Asymmetry": {
+        "title": "The Enron Document-Shredding Audit Disaster",
+        "company": "Enron Corp. / Arthur Andersen (2001)",
+        "scam_what_happened": "Enron hid billions of dollars of bad debt through accounting tricks. When the U.S. government began investigating, their accounting firm Arthur Andersen started aggressively shredding thousands of pages of audit records and deleting files to cover it up.",
+        "scam_the_trap": "Unclear data retention rules allowed managers to destroy critical records. Complying with internal 'document destruction policies' was used as an excuse to destroy evidence of massive corporate fraud.",
+        "scam_the_fix": "Never sign a clause that forces absolute data destruction without adding an exception for regulatory audits, tax laws, or legal holding requirements. Always keep a clear, locked audit trail."
+    },
+    "Termination Rights": {
+        "title": "The Enron Document-Shredding Audit Disaster",
+        "company": "Enron Corp. / Arthur Andersen (2001)",
+        "scam_what_happened": "Enron hid billions of dollars of bad debt through accounting tricks. When the U.S. government began investigating, their accounting firm Arthur Andersen started aggressively shredding thousands of pages of audit records and deleting files to cover it up.",
+        "scam_the_trap": "Unclear data retention rules allowed managers to destroy critical records. Complying with internal 'document destruction policies' was used as an excuse to destroy evidence of massive corporate fraud.",
+        "scam_the_fix": "Never sign a clause that forces absolute data destruction without adding an exception for regulatory audits, tax laws, or legal holding requirements. Always keep a clear, locked audit trail."
+    },
+    "Liability Cap": {
+        "title": "The Theranos Unlimited Liability Shield",
+        "company": "Theranos / Elizabeth Holmes (2015)",
+        "scam_what_happened": "Theranos sold blood-testing machines to retail giants Walgreens and Safeway that they knew did not work. To prevent these companies from suing when the machines gave dangerously wrong patient results, Theranos hid massive liability caps and warranty waivers in their commercial contracts.",
+        "scam_the_trap": "A contract clause limited Theranos's financial liability to a tiny fraction of what the stores spent, and stated they made no guarantees about test accuracy. Safeway lost $100 Million and had little legal recourse.",
+        "scam_the_fix": "Always carve out 'willful fraud', 'intentional misconduct', and 'gross negligence' from liability caps. If a vendor commits deliberate fraud, their liability must be 100% uncapped."
+    },
+    "IP Assignment": {
+        "title": "The Facebook Winklevoss IP Theft Dispute",
+        "company": "Facebook / HarvardConnection (2004)",
+        "scam_what_happened": "The Winklevoss twins hired Mark Zuckerberg to write code for their website, HarvardConnection. They discussed the entire concept but didn't sign a clear intellectual property transfer or employment contract. Zuckerberg took the idea and built Facebook instead.",
+        "scam_the_trap": "A loose handshake agreement without clear written IP assignments allowed Zuckerberg to claim that all Facebook code and concepts belonged strictly to him personally.",
+        "scam_the_fix": "Never write code or build features without a signed, clear intellectual property agreement detailing who owns the custom work product, while explicitly preserving your pre-existing background tools and know-how."
+    },
+    "Intellectual Property Assignment": {
+        "title": "The Facebook Winklevoss IP Theft Dispute",
+        "company": "Facebook / HarvardConnection (2004)",
+        "scam_what_happened": "The Winklevoss twins hired Mark Zuckerberg to write code for their website, HarvardConnection. They discussed the entire concept but didn't sign a clear intellectual property transfer or employment contract. Zuckerberg took the idea and built Facebook instead.",
+        "scam_the_trap": "A loose handshake agreement without clear written IP assignments allowed Zuckerberg to claim that all Facebook code and concepts belonged strictly to him personally.",
+        "scam_the_fix": "Never write code or build features without a signed, clear intellectual property agreement detailing who owns the custom work product, while explicitly preserving your pre-existing background tools and know-how."
+    },
+    "Payment Terms Gap": {
+        "title": "The B2B Vendor Liquidity Squeeze",
+        "company": "Classic Mid-Tier Corporate Outsourcing Disputes",
+        "scam_what_happened": "Large corporations frequently squeeze small service vendors by inserting payment term mismatches in contract schedules. They write Net 30 payment terms in the main body, but slip in Net 60 or Net 90 for premium services in the annexes, triggering massive vendor payroll crises.",
+        "scam_the_trap": "Conflicting invoice terms between the main contract and active attachments lead to endless late fees, interest charges, and a complete freeze of vendor cash flow.",
+        "scam_the_fix": "Insert a priority of documents clause stating that in the event of any contradiction, the payment terms in the main body of the agreement shall strictly override any schedules or purchase orders."
+    },
+    "Indemnification": {
+        "title": "The WeWork Adam Neumann Self-Dealing Landlord Scam",
+        "company": "WeWork / Adam Neumann (2019)",
+        "scam_what_happened": "Adam Neumann, the founder of WeWork, engaged in massive self-dealing. He bought commercial buildings personally using borrowed money, then leased them back to WeWork at highly inflated rates. He also trademarked the word 'We' personally and made WeWork pay him $5.9 Million to lease it back.",
+        "scam_the_trap": "The lack of strict affiliate transaction limits and broad mutual indemnification clauses forced WeWork's shell company to defend and pay for Neumann's personal debts, regardless of fault.",
+        "scam_the_fix": "Always insert a strict Affiliate Transactions limitation stating that any agreement with officers, directors, or founders must be approved by an independent committee and conducted at fair market rates, with zero self-dealing."
+    }
+}
+

@@ -1,0 +1,43 @@
+=== MUTUAL NON-DISCLOSURE AND SERVICES AGREEMENT ===
+
+Effective Date: June 1, 2026
+Parties: Acme Corp ('Client') and TechServe Solutions Pvt Ltd ('Vendor')
+
+
+1. SERVICES
+-----------
+Vendor shall provide software development and consulting services as described in Schedule A attached hereto. Vendor shall use commercially reasonable efforts to deliver all services in accordance with the agreed project milestones.
+
+2. PAYMENT TERMS
+----------------
+All invoices issued under this Agreement are payable within thirty (30) days of receipt. Late payments beyond thirty (30) days shall accrue interest at 1.5% per month. All Premium Tier consulting services under Schedule A shall also follow the standard thirty (30) day payment terms.
+
+3. TERMINATION
+--------------
+Either party may terminate this Agreement for convenience at any time upon thirty (30) days' prior written notice to the other party. Either party may terminate this Agreement for material breach remaining uncured for fifteen (15) days following written notice specifying such breach in reasonable detail.
+
+4. LIABILITY CAP
+----------------
+Each party's aggregate liability arising out of or related to this Agreement shall not exceed the total fees paid or payable by Client to Vendor in the twelve (12) months preceding the event giving rise to the claim. This mutual cap applies equally to both parties. This limitation shall not apply to breaches of confidentiality or willful misconduct.
+
+5. INDEMNIFICATION
+------------------
+Each party ('Indemnifying Party') shall indemnify, defend, and hold harmless the other party from and against third-party claims arising out of the Indemnifying Party's own gross negligence or willful misconduct. Neither party shall be required to indemnify the other for the other party's own negligent acts.
+
+6. INTELLECTUAL PROPERTY
+------------------------
+All deliverables and work product specifically created by Vendor for Client under this Agreement ('Deliverables') shall be the exclusive property of Client upon full payment. Notwithstanding the foregoing, Vendor explicitly retains all rights to its pre-existing intellectual property, background technology, and general methodologies ('Background IP'). Vendor hereby grants Client a perpetual, royalty-free, non-exclusive license to use Background IP solely to the extent incorporated into the Deliverables.
+
+7. DATA PROTECTION
+------------------
+Both parties shall comply with applicable data protection laws including GDPR and IT Act 2000. All personal data shall be processed only as necessary for performing the services. Upon termination, both parties shall delete all personal data within thirty (30) days, except where retention is required by applicable law or regulatory mandate, in which case such data shall be retained securely and destroyed upon expiry of the mandatory retention period.
+
+8. GOVERNING LAW
+----------------
+This Agreement shall be governed by the laws of India. Any disputes shall be resolved by binding arbitration in Bangalore, Karnataka, India, under the Arbitration and Conciliation Act, 1996.
+
+9. ENTIRE AGREEMENT
+-------------------
+This Agreement constitutes the entire understanding between the parties with respect to its subject matter and supersedes all prior agreements. In the event of any conflict between the main body of this Agreement and any Schedule, the terms of the main body shall prevail.
+
+Signed and agreed by duly authorized representatives of both parties.

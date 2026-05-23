@@ -1,0 +1,25 @@
+MUTUAL SERVICES AGREEMENT
+=========================
+
+Healed & Audited by RegulAIte-AI Portal
+Active Persona: shhs, General Counsel
+Date of Audit: 23 May 2026
+
+--- SECTION 1.1: SCOPE OF SERVICES ---
+Vendor shall perform the software development, API integration, and system deployment services specifically detailed in Exhibit A.
+
+--- SECTION 2.1: PAYMENT TERMS GAP ---
+All invoices issued under this Agreement shall be payable by Client strictly within thirty (30) days of receipt.
+
+--- SECTION 4.2: INDEMNIFICATION ASYMMETRY ---
+Each party agrees to indemnify and hold harmless the other party from and against third-party claims arising out of the gross negligence or willful misconduct of the indemnifying party.
+
+--- SECTION 6.3: INTELLECTUAL PROPERTY ASSIGNMENT ---
+All deliverables specifically created by Vendor for Client under this Agreement shall belong to Client. Vendor explicitly retains all rights to its pre-existing technologies and background IP.
+
+--- SECTION 9.1: TERMINATION ASYMMETRY ---
+Either party may terminate this Agreement for convenience at any time upon thirty (30) days' prior written notice to the other party.
+
+--- SECTION 10.4: LIMITATION OF LIABILITY ---
+Each party's total aggregate liability arising out of or related to this Agreement shall be limited to a mutual cap equal to twelve (12) months of fees.
+

@@ -1,0 +1,37 @@
+=== TECHNOLOGY SERVICES AGREEMENT — MILDLY ASYMMETRIC DRAFT ===
+
+Effective Date: June 1, 2026
+Parties: GlobalTech Inc ('Client') and BuildSoft Pvt Ltd ('Vendor')
+
+
+1. SERVICES
+-----------
+Vendor shall provide software engineering, deployment, and support services as described in Schedule A. Vendor will assign dedicated resources for each project phase.
+
+2. PAYMENT TERMS
+----------------
+All invoices issued under this Agreement are payable within thirty (30) days of receipt (Net 30). However, Schedule B designates all Premium Tier consulting and deployment services as payable within fifteen (15) days of invoice receipt (Net 15). Late payment interest shall apply at 2% per month.
+
+3. TERMINATION — NOTICE PERIOD ASYMMETRY
+----------------------------------------
+Client may terminate this Agreement upon fifteen (15) days' written notice for any reason. Vendor may terminate this Agreement only upon forty-five (45) days' written notice, and only in the event of Client's material breach remaining uncured for twenty (20) days following written notice.
+
+4. LIABILITY CAP
+----------------
+Client's aggregate liability under this Agreement is capped at the total fees paid in the three (3) months preceding the event giving rise to the claim. Vendor's aggregate liability under this Agreement is capped at the total fees paid in the six (6) months preceding the event. Neither cap shall apply to breaches of confidentiality.
+
+5. INDEMNIFICATION
+------------------
+Vendor shall indemnify Client against third-party claims arising from Vendor's negligence. Client shall indemnify Vendor against third-party claims arising from Client's negligence or misuse of the services. Mutual indemnification is limited to proven negligence of the indemnifying party.
+
+6. INTELLECTUAL PROPERTY
+------------------------
+All deliverables created under this Agreement shall become the property of Client upon full payment. Vendor retains Background IP and general methodologies developed prior to or independently of this engagement. Client receives a non-exclusive license to use Background IP in delivered work.
+
+7. DATA RETENTION
+-----------------
+Vendor shall retain all project data and backups for a minimum of twelve (12) months following project completion for audit and support purposes. Upon contract termination, personal data shall be deleted within sixty (60) days unless otherwise required by applicable law.
+
+8. GOVERNING LAW
+----------------
+This Agreement is governed by the laws of the State of Karnataka, India. Disputes shall be escalated first to senior management mediation for thirty (30) days before any arbitration proceeding.

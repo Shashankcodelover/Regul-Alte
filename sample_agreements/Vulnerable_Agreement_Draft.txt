@@ -1,0 +1,47 @@
+=== ENTERPRISE MASTER SERVICES AGREEMENT — DRAFT v0.1 (HIGHLY VENDOR RESTRICTIVE) ===
+
+Effective Date: June 1, 2026
+Parties: MegaCorp Global Ltd ('Client') and TechServe Vendors Pvt Ltd ('Vendor')
+
+IMPORTANT NOTICE: This draft contains several clauses that are severely disadvantageous to the Vendor. Legal review is strongly advised before signing.
+
+
+1. SERVICES
+-----------
+Vendor shall provide all software development, deployment, operations, and support services as directed by Client from time to time. Client reserves the right to modify the scope of services at any time without additional compensation.
+
+2. PAYMENT TERMS
+----------------
+All invoices are payable within forty-five (45) days of receipt (Net 45). Client reserves the right to withhold payment for any deliverables deemed unsatisfactory in Client's sole discretion, without obligation to provide detailed justification.
+
+3. TERMINATION — CRITICAL ASYMMETRY
+-----------------------------------
+Client may terminate this Agreement at any time for any reason upon five (5) days' written notice, whereas Vendor may only terminate upon a material breach remaining uncured for sixty (60) days following written notice. Upon termination for any reason, Vendor must continue providing transition services for up to six (6) months at no additional charge.
+
+4. INDEMNIFICATION — REGARDLESS OF FAULT
+----------------------------------------
+Vendor agrees to indemnify, defend, and hold harmless the Client from and against any and all claims, losses, liabilities, damages, expenses, and costs (including reasonable attorneys' fees) arising out of or related to the Vendor's performance under this Agreement, regardless of fault. This obligation shall survive termination of this Agreement indefinitely.
+
+5. LIABILITY CAP — UNCAPPED VENDOR LIABILITY
+--------------------------------------------
+Under no circumstances shall Client's aggregate liability arising out of or related to this Agreement exceed the total amount paid by Client to Vendor in the one (1) month preceding the event giving rise to the claim. No equivalent cap is placed upon Vendor's liability. Vendor's liability under this Agreement shall remain entirely uncapped and unlimited.
+
+6. INTELLECTUAL PROPERTY — OVERBROAD ASSIGNMENT
+-----------------------------------------------
+All work product, inventions, discoveries, and improvements conceived or developed by Vendor, whether or not during working hours and whether or not using Client's resources, shall be deemed works made for hire and shall be the exclusive property of Client. This includes all background IP, pre-existing tools, and general methodologies used during the engagement.
+
+7. DATA RETENTION vs. DATA DESTRUCTION — CONTRADICTORY CLAUSES
+--------------------------------------------------------------
+Section 7.1 — Data Destruction: All confidential data, including customer records and transaction logs, must be permanently and irreversibly destroyed within thirty (30) days of contract termination.
+Section 7.2 — Data Retention: Vendor shall retain complete backups of all transactional data for a minimum period of three (3) years to ensure compliance with applicable financial regulations and tax audit requirements.
+NOTE: Sections 7.1 and 7.2 directly contradict each other. Complying with Section 7.1 (destroy within 30 days) makes it legally impossible to comply with Section 7.2 (retain for 3 years). This is an unresolved logical conflict.
+
+8. NON-COMPETE — HIGHLY RESTRICTIVE
+-----------------------------------
+Vendor agrees not to engage with any company that competes with Client in any capacity for a period of five (5) years following termination, in any jurisdiction worldwide, without Client's prior written consent.
+
+9. GOVERNING LAW
+----------------
+This Agreement shall be governed exclusively by the laws of the State of Delaware, United States. All disputes must be resolved by binding arbitration in San Francisco, California, under JAMS arbitration rules, at Vendor's sole cost and expense.
+
+THIS AGREEMENT CONTAINS CRITICAL LEGAL RISKS. DO NOT SIGN WITHOUT INDEPENDENT LEGAL REVIEW.
